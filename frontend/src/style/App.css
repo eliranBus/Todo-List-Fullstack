@@ -1,0 +1,208 @@
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("../assets/fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "Quicksand-Bold";
+  src: url("../assets/fonts/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: "IndieFlower-Regular";
+  src: url("../assets/fonts/IndieFlower-Regular.ttf");
+}
+
+body,
+html {
+  text-align: center;
+  font-family: "Quicksand-Regular";
+  background: #00416a;
+  background: -webkit-linear-gradient(to left, #e4e5e6, #00416a);
+  background: linear-gradient(to left, #e4e5e6, #00416a);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.todos-container {
+  width: 40em;
+  text-align: left;
+  margin-bottom: 3em;
+}
+
+.todos-container table {
+  width: 100%;
+}
+
+.todos-container td {
+  width: 30%;
+  padding: 0.3em 0.8em;
+}
+
+.todos-container th {
+  width: 30%;
+  padding: 0.5em 0.8em;
+}
+
+.todos-container table {
+  border: 1px solid black;
+}
+
+.todos-container .status:hover {
+  cursor: pointer;
+}
+
+.todos-container table {
+  font-family: "IndieFlower-Regular";
+  letter-spacing: 1px;
+  font-size: 1.2em;
+}
+
+.todos-container tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.todos-container .trash:hover {
+  cursor: pointer;
+}
+
+.todos-container thead .trash:hover {
+  cursor: default;
+}
+
+.todos-container .status {
+  padding-left: 2.5em;
+}
+
+.todos-container tr {
+  position: relative;
+}
+
+.todos-container tr::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  height: 0.5px;
+}
+
+.todos-container thead {
+  background-color: lightgray;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1 {
+  margin: 1.5em 0;
+  font-family: "Quicksand-Bold";
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+label {
+  color: white;
+}
+
+#name {
+  font-family: "IndieFlower-Regular";
+  letter-spacing: 1px;
+  font-weight: 600;
+  height: 2em;
+  padding: 0 1em;
+}
+
+#name::placeholder {
+  font-family: "Quicksand-Regular";
+}
+
+.todos-container table {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.todos-container thead tr::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  height: 0.5px;
+}
+
+.todos-container tr:last-child::before {
+  background-color: transparent;
+}
+
+.todos-container .completed:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 95%;
+  left: 2%;
+  background-color: black;
+  height: 1%;
+}
+
+.add-todo-wrapper {
+  margin: 1em 0;
+}
+
+input,
+select,
+button {
+  font-family: "Quicksand-Regular";
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  height: 2em;
+  padding: 0 1em;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.55);
+  transition: all 0.1s ease-in-out;
+  font-family: "Quicksand-Regular";
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+  background-color: lightgray;
+}
+
+.add-todo-form {
+  display: flex;
+}
+
+.add-todo-wrapper form input {
+  padding: 0.5em 1em;
+  margin: 0 0.2em;
+}
+
+.index {
+  width: 20% !important;
+}
+
+.trash {
+  text-align: center;
+  font-size: 1.5em;
+  width: 20% !important;
+}
+
+.filter-wrapper {
+  width: 40em;
+  margin: 1em 0 2em;
+  text-align: left;
+}
+option {
+  font-family: "Quicksand-Regular";
+}
